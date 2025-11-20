@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Sueldos - Cooperativa 25 de Mayo Ltda.</title>
+    <!-- AOS - Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- GSAP Library for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección Portada -->
+    <section id="portada" class="portada">
+        <div class="container">
+            <h1 class="titulo-principal" data-aos="fade-down" data-aos-duration="1000">Gestor de Sueldos</h1>
+            <h2 class="subtitulo" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Cooperativa 25 de Mayo Ltda.</h2>
+            <p class="descripcion" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                Sistema integral para gestionar empleados, convenios laborales y liquidar sueldos 
+                de manera automática. Desarrollado como solución real para la cooperativa y como 
+                trabajo académico de la Tecnicatura Universitaria en Programación (UTN).
+            </p>
+            <div class="autores" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <p class="texto-autores">Desarrollado por:</p>
+                <div class="nombres-autores">
+                    <span data-aos="zoom-in" data-aos-delay="800">Francisco Giménez</span>
+                    <span data-aos="zoom-in" data-aos-delay="900">Bruno Collaud</span>
+                    <span data-aos="zoom-in" data-aos-delay="1000">Guillermo Faes</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Resumen del Proyecto -->
+    <section id="resumen" class="resumen">
+        <div class="container">
+            <h2 class="titulo-seccion" data-aos="fade-up">Resumen del Proyecto</h2>
+            <div class="contenido-resumen">
+                <p data-aos="fade-right" data-aos-delay="100">
+                    El objetivo principal del sistema es <strong>gestionar empleados, convenios laborales y liquidar sueldos</strong> 
+                    para la Cooperativa de Servicios Públicos 25 de Mayo Ltda.
+                </p>
+                <p data-aos="fade-right" data-aos-delay="200">
+                    El sistema permite:
+                </p>
+                <ul class="lista-funcionalidades" data-aos="fade-right" data-aos-delay="300">
+                    <li>Registrar, editar y administrar empleados</li>
+                    <li>Administrar convenios y categorías salariales</li>
+                    <li>Realizar liquidaciones de sueldo de manera automática</li>
+                    <li>Calcular aportes, descuentos y conceptos según convenio</li>
+                    <li>Generar información organizada y útil para la administración y contaduría</li>
+                </ul>
+                <p data-aos="fade-right" data-aos-delay="400">
+                    Este proyecto se desarrolla como trabajo académico de la <strong>Tecnicatura Universitaria en Programación (UTN)</strong> 
+                    y, a la vez, como solución real para la cooperativa.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tecnologías -->
+    <section id="tecnologias" class="tecnologias">
+        <div class="container">
+            <h2 class="titulo-seccion" data-aos="fade-up">Tecnologías Utilizadas</h2>
+            <div class="grid-tecnologias">
+                <div class="tarjeta-tecnologia" data-aos="flip-left" data-aos-delay="100">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>React-Bootstrap</li>
+                        <li>TanStack React Table</li>
+                        <li>TanStack React Virtual</li>
+                        <li>Hooks personalizados</li>
+                        <li>CSS moderno</li>
+                        <li>Arquitectura modular y componentes funcionales</li>
+                    </ul>
+                </div>
+                <div class="tarjeta-tecnologia" data-aos="flip-left" data-aos-delay="200">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring + JPA/Hibernate</li>
+                        <li>Endpoints REST</li>
+                        <li>Manejo de roles y permisos</li>
+                        <li>Validaciones del lado del backend</li>
+                    </ul>
+                </div>
+                <div class="tarjeta-tecnologia" data-aos="flip-left" data-aos-delay="300">
+                    <h3>Base de Datos</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>Tablas para empleados, convenios, categorías, liquidaciones, recibos y movimientos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Arquitectura -->
+    <section id="arquitectura" class="arquitectura">
+        <div class="container">
+            <h2 class="titulo-seccion" data-aos="fade-up">Arquitectura del Sistema</h2>
+            <div class="diagrama-arquitectura">
+                <!-- Frontend -->
+                <div class="capa-arquitectura frontend" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="capa-icono">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <div class="capa-titulo">Frontend</div>
+                    <div class="capa-descripcion">React + TypeScript</div>
+                    <div class="capa-detalles">
+                        <span class="badge-tech">React</span>
+                        <span class="badge-tech">TypeScript</span>
+                        <span class="badge-tech">UI/UX</span>
+                    </div>
+                </div>
+
+                <!-- Conexión 1 -->
+                <div class="conexion-arquitectura" data-aos="fade-down" data-aos-delay="200">
+                    <div class="linea-conexion">
+                        <div class="particula-flujo"></div>
+                        <div class="particula-flujo" style="animation-delay: 0.5s;"></div>
+                        <div class="particula-flujo" style="animation-delay: 1s;"></div>
+                    </div>
+                    <div class="punta-flecha-conexion"></div>
+                    <div class="texto-conexion">
+                        <span class="icono-conexion">📡</span>
+                        <span>JSON / API REST</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="capa-arquitectura backend" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="capa-icono">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="3" x2="9" y2="21"></line>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                        </svg>
+                    </div>
+                    <div class="capa-titulo">Backend</div>
+                    <div class="capa-descripcion">Java (Spring + JPA)</div>
+                    <div class="capa-detalles">
+                        <span class="badge-tech">Java</span>
+                        <span class="badge-tech">Spring</span>
+                        <span class="badge-tech">REST API</span>
+                    </div>
+                </div>
+
+                <!-- Conexión 2 -->
+                <div class="conexion-arquitectura" data-aos="fade-down" data-aos-delay="400">
+                    <div class="linea-conexion">
+                        <div class="particula-flujo"></div>
+                        <div class="particula-flujo" style="animation-delay: 0.5s;"></div>
+                        <div class="particula-flujo" style="animation-delay: 1s;"></div>
+                    </div>
+                    <div class="punta-flecha-conexion"></div>
+                    <div class="texto-conexion">
+                        <span class="icono-conexion">🗄️</span>
+                        <span>SQL (ORM)</span>
+                    </div>
+                </div>
+
+                <!-- Base de Datos -->
+                <div class="capa-arquitectura base-datos" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="capa-icono">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <div class="capa-titulo">Base de Datos</div>
+                    <div class="capa-descripcion">PostgreSQL</div>
+                    <div class="capa-detalles">
+                        <span class="badge-tech">PostgreSQL</span>
+                        <span class="badge-tech">ORM</span>
+                        <span class="badge-tech">SQL</span>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Sección Funcionalidades del Frontend -->
+    <section id="funcionalidades" class="funcionalidades">
+        <div class="container">
+            <h2 class="titulo-seccion" data-aos="fade-up">Funcionalidades del Frontend</h2>
+            <div class="grid-funcionalidades">
+                <div class="tarjeta-funcionalidad" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Gestión de Empleados</h3>
+                    <ul>
+                        <li>Alta, baja y modificación de empleados</li>
+                        <li>Tabla dinámica con paginación</li>
+                        <li>Filtrado y ordenamiento</li>
+                        <li>Virtualización</li>
+                        <li>Validaciones visuales</li>
+                        <li>Interfaz limpia y profesional</li>
+                    </ul>
+                    <button class="boton-accion" data-video="videos/Sec. Empleados-1.mp4" data-funcionalidad="empleados">Ver en acción</button>
+                </div>
+                <div class="tarjeta-funcionalidad" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Gestión de Convenios</h3>
+                    <ul>
+                        <li>ABM de convenios</li>
+                        <li>ABM de categorías asociadas</li>
+                        <li>Definición de reglas salariales</li>
+                        <li>Tablas con filtros y detalles</li>
+                    </ul>
+                    <button class="boton-accion" data-funcionalidad="convenios">Ver en acción</button>
+                </div>
+                <div class="tarjeta-funcionalidad" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Liquidación de Sueldos</h3>
+                    <ul>
+                        <li>Cálculo automático según convenio y categoría</li>
+                        <li>Carga de conceptos remunerativos y no remunerativos</li>
+                        <li>Cálculo de aportes, descuentos, retenciones, neto a cobrar</li>
+                        <li>Posibilidad de generar un recibo y persistir la liquidación</li>
+                        <li>Interfaz clara para revisar conceptos y totales</li>
+                    </ul>
+                    <button class="boton-accion" data-funcionalidad="liquidacion">Ver en acción</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Documentos PDF -->
+    <section id="documentos" class="documentos">
+        <div class="container">
+            <h2 class="titulo-seccion" data-aos="fade-up">Documentación</h2>
+            <p class="descripcion-documentos" data-aos="fade-up" data-aos-delay="100">
+                Accedé a la documentación del proyecto en formato PDF y Markdown
+            </p>
+            <div class="grid-documentos" id="grid-documentos">
+                <!-- README del Proyecto -->
+                <div class="tarjeta-documento" data-aos="fade-up" data-aos-delay="50">
+                    <div class="icono-documento">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>README del Proyecto</h3>
+                    <p>Documentación general del sistema, objetivos, funcionalidades y tecnologías utilizadas</p>
+                    <div class="botones-documento">
+                        <button class="boton-ver" data-file="pdfs/README.md" data-type="markdown">Ver Documento</button>
+                        <a href="pdfs/README.md" download class="boton-descargar">Descargar</a>
+                    </div>
+                </div>
+
+                <!-- Documentación Técnica del Frontend -->
+                <div class="tarjeta-documento" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icono-documento">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Documentación Técnica del Frontend</h3>
+                    <p>Especificaciones técnicas, arquitectura y componentes del frontend desarrollado con React y TypeScript</p>
+                    <div class="botones-documento">
+                        <button class="boton-ver" data-pdf="pdfs/Documentacion Tecnica del Frontend.pdf">Ver PDF</button>
+                        <a href="pdfs/Documentacion Tecnica del Frontend.pdf" download class="boton-descargar">Descargar</a>
+                    </div>
+                </div>
+
+                <!-- Documentación Técnica del Backend -->
+                <div class="tarjeta-documento" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icono-documento">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Documentación Técnica del Backend</h3>
+                    <p>Arquitectura, endpoints REST, modelos de datos y lógica de negocio implementada con Java y Spring</p>
+                    <div class="botones-documento">
+                        <button class="boton-ver" data-pdf="pdfs/Documentacion Tecnica del Backend.pdf">Ver PDF</button>
+                        <a href="pdfs/Documentacion Tecnica del Backend.pdf" download class="boton-descargar">Descargar</a>
+                    </div>
+                </div>
+
+                <!-- Requerimientos Funcionales -->
+                <div class="tarjeta-documento" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icono-documento">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Requerimientos Funcionales</h3>
+                    <p>Especificación detallada de las funcionalidades que debe cumplir el sistema de gestión de sueldos</p>
+                    <div class="botones-documento">
+                        <button class="boton-ver" data-pdf="pdfs/Requerimientos Funcionales Gesto de Sueldos 25 de Mayo.pdf">Ver PDF</button>
+                        <a href="pdfs/Requerimientos Funcionales Gesto de Sueldos 25 de Mayo.pdf" download class="boton-descargar">Descargar</a>
+                    </div>
+                </div>
+
+                <!-- Requerimientos NO Funcionales -->
+                <div class="tarjeta-documento" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icono-documento">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Requerimientos NO Funcionales</h3>
+                    <p>Especificaciones de rendimiento, seguridad, usabilidad y calidad del sistema</p>
+                    <div class="botones-documento">
+                        <button class="boton-ver" data-pdf="pdfs/Requerimientos NO Funcionales Gestor de Sueldos 25 de Mayo.pdf">Ver PDF</button>
+                        <a href="pdfs/Requerimientos NO Funcionales Gestor de Sueldos 25 de Mayo.pdf" download class="boton-descargar">Descargar</a>
+                    </div>
+                </div>
+
+                <!-- Especificaciones de Diseño -->
+                <div class="tarjeta-documento" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icono-documento">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Especificaciones de Diseño</h3>
+                    <p>Diseño de interfaz, experiencia de usuario y guías de estilo para el sistema</p>
+                    <div class="botones-documento">
+                        <button class="boton-ver" data-pdf="pdfs/Especificaciones de Diseño.pdf">Ver PDF</button>
+                        <a href="pdfs/Especificaciones de Diseño.pdf" download class="boton-descargar">Descargar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para visualizar PDF y Markdown -->
+    <div id="modal-pdf" class="modal-pdf">
+        <div class="modal-contenido">
+            <div class="modal-header">
+                <h3 id="modal-titulo">Visualizador de Documento</h3>
+                <button class="cerrar-modal" id="cerrar-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe id="iframe-pdf" src="" frameborder="0"></iframe>
+                <div id="markdown-viewer" class="markdown-viewer"></div>
+            </div>
+            <div class="modal-footer">
+                <a id="descargar-pdf" href="" download class="boton-descargar-modal">Descargar Documento</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para reproducir videos -->
+    <div id="modal-video" class="modal-video">
+        <div class="modal-contenido-video">
+            <div class="modal-header-video">
+                <h3 id="modal-titulo-video">Video Demostrativo</h3>
+                <button class="cerrar-modal-video" id="cerrar-modal-video">&times;</button>
+            </div>
+            <div class="modal-body-video">
+                <video id="video-player" controls>
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Final / Créditos -->
+    <section id="creditos" class="creditos">
+        <div class="container">
+            <h2 class="titulo-seccion" data-aos="fade-up">Créditos</h2>
+            <div class="contenido-creditos">
+                <p class="texto-creditos" data-aos="fade-up" data-aos-delay="100">
+                    Este proyecto fue desarrollado por:
+                </p>
+                <div class="nombres-autores-final">
+                    <span data-aos="zoom-in" data-aos-delay="200">Francisco Giménez</span>
+                    <span data-aos="zoom-in" data-aos-delay="300">Bruno Collaud</span>
+                    <span data-aos="zoom-in" data-aos-delay="400">Guillermo Faes</span>
+                </div>
+                <p class="texto-presentacion" data-aos="fade-up" data-aos-delay="500">
+                    Presentación para <strong>Metodología en Sistemas II</strong>
+                </p>
+                <p class="texto-institucion" data-aos="fade-up" data-aos-delay="600">
+                    Tecnicatura Universitaria en Programación - UTN
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón Scroll to Top -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Volver arriba">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
